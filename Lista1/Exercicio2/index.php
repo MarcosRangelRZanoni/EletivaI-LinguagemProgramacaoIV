@@ -16,11 +16,11 @@
     <div class="row">
       <div class="col">
         <label from="quilo" class="label-control">Informe o valor do quilo do produto: </label>
-        <input type="number" name="quilo" id="quilo" class="form-control" />
+        <input type="number" name="quilo" id="quilo" class="form-control" placeholder="R$ 00,00" />
       </div>
       <div class="col">
         <label from="qtd_quilos" class="label-control">Informe a quantidade de quilos do produto: </label>
-        <input type="number" name="qtd_quilos" id="qtd_quilos" class="form-control" />
+        <input type="number" name="qtd_quilos" id="qtd_quilos" class="form-control" placeholder="0 Kg" />
       </div>
 
     </div>
