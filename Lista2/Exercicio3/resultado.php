@@ -12,15 +12,14 @@
   </head>
   <body class="container">
     <?php 
-    echo "<h1>Resultado</h1>";
-    $valor = $_POST['valor'];
-    
-    if($valor > 10){
-      echo "O valor é maior que 10.";
-    }
-    else
-    {
-      echo "O valor é menor que 10.";
+      $array = array($_POST['valor'], $_POST['valor2'], $_POST['valor3'], $_POST['valor4'], $_POST['valor5'], $_POST['valor6'], $_POST['valor7'], $_POST['valor8'], $_POST['valor9'], $_POST['valor10']);
+      sort($array);
+      
+      $duplicates = array_unique(array_diff_assoc($array, array_unique($array)));
+      print_r($duplicates);
+
+      foreach( $duplicates as $chave => $valor ){
+        echo "$chave = $valor\t";
     }
     ?>
 
