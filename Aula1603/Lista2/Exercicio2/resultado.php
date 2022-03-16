@@ -12,13 +12,13 @@
   </head>
   <body class="container">
     <?php 
-    echo "<h1>Resultado</h1>";
-    $quilo = $_POST['quilo'];
-    $qtd_quilo = $_POST['qtd_quilos'];
+    for($x=1; $x <=20; $x++){
+      $array[$x] = $_POST["valor$x"];
+    }
     
-    $valor_final = $quilo * $qtd_quilo;
 
-    echo "O valor a ser pago é: $valor_final"
+
+
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
