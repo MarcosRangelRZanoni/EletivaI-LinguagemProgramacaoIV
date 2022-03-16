@@ -16,8 +16,8 @@
   <form method="post" action="resultado.php">
     <div class="">
       <div class="">
-        <label from="valor" class="label-control">Informe o valor: </label>
-        <input type="number" name="valor" id="valor" class="form-control" />
+        <label from="valor1" class="label-control">Informe o valor: </label>
+        <input type="number" name="valor1" id="valor1" class="form-control" />
       </div>
       <div class="">
         <label from="valor2" class="label-control">Informe o valor: </label>

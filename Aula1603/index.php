@@ -9,30 +9,37 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>Exercício 1</title>
+  <title>Aula 16/03</title>
 </head>
 
 <body class="container">
-  <?php
-  $array = array($_POST['valor'], $_POST['valor2'], $_POST['valor3'], $_POST['valor4'], $_POST['valor5'], $_POST['valor6'], $_POST['valor7'], $_POST['valor8'], $_POST['valor9'], $_POST['valor10']);
+  <form method="post" action="resultado.php">
 
-  $maior = 0;
-  $indice = 0;
-  
-  for ($i = 0; $i < 10; $i++) {
-    
-    
-    if ($maior < $array[$i]) {
-      $maior = $array[$i];
-      $indice = $i + 1;
-    }
-    
-    
-  }
-  echo "<h1>Resultado</h1> ";
-  echo "<p>O maior valor é $maior e está na $indice posição informada</p>";
-  
-  ?>
+
+
+
+    <div class="row">
+      <?php
+      for ($i = 1; $i <= 10; $i++) {
+      
+      ?>
+      <div class="col">
+        <label for="valor<?= $i ?>" class="label-control">
+          Informe o valor <?= $i ?>
+        </label>
+        <input type="number" name="valor<?= $i ?>" id="valor<?= $i ?>" class="form-control" />
+      </div>
+      <?php 
+      }
+      ?>
+    </div>
+    <div class="row">
+      <div class="col mt-2">
+        <button class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </form>
+
 
   <!-- Optional JavaScript; choose one of the two! -->
 
