@@ -1,37 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Exercício 3</title>
-  </head>
-  <body class="container">
-    <?php 
-      $array = array($_POST['valor'], $_POST['valor2'], $_POST['valor3'], $_POST['valor4'], $_POST['valor5'], $_POST['valor6'], $_POST['valor7'], $_POST['valor8'], $_POST['valor9'], $_POST['valor10']);
-      sort($array);
-      
-      $duplicates = array_unique(array_diff_assoc($array, array_unique($array)));
-      print_r($duplicates);
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-      foreach( $duplicates as $chave => $valor ){
-        echo "$chave = $valor\t";
+  <title>Exercício 3</title>
+</head>
+
+<body class="container">
+  <h1>Resposta Exercício 3</h1>
+  <?php
+  for ($x = 1; $x <= 10; $x++) {
+    $array[$x] = $_POST["valor$x"];
+  }
+
+  for ($i = 1; $i < 10; $i++) {
+    if ($array[$i] == $array[$i + 1]) {
+      $array[$i] = "-";
     }
-    ?>
+  }
+  sort($array);
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  foreach ($array as $chave => $valor) {
+    echo "$chave = $valor";
+    echo "<br>";
+  }
+  ?>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

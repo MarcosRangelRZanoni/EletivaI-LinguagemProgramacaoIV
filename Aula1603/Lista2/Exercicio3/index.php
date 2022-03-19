@@ -18,8 +18,8 @@
   <form method="post" action="resultado.php">
     <div class="row">
       <div class="col">
-        <label from="valor" class="label-control">Informe o 1º valor: </label>
-        <input type="number" name="valor" id="valor" class="form-control" />
+        <label from="valor1" class="label-control">Informe o 1º valor: </label>
+        <input type="number" name="valor1" id="valor1" class="form-control" />
       </div>
       <div class="col">
         <label from="valor" class="label-control">Informe o 2º valor: </label>
