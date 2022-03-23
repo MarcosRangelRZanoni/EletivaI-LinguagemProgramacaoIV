@@ -12,23 +12,16 @@
   </head>
   <body class="container">
     <?php 
-    echo "<h1>Resultado</h1>";
-    $nota1 = $_POST['nota1'];
-    $nota2 = $_POST['nota2'];
-    $nota3 = $_POST['nota3'];
-    $nota4 = $_POST['nota4'];
-
-    $media = $nota1 + $nota2 + $nota3 + $nota4 / 4;
+    for ($x = 0; $x < 10; $x++) {
+      $array[$x] = $_POST["valor$x"];
+    }
+    sort($array);
+    foreach ($array as $chave => $v) {
+      echo "Crescemte";
+      echo "<br>";
+      echo $v;
+    }
     
-    if($media >= 7.0)
-    {
-        echo "Aprovado!";
-    }
-    else
-    {
-        echo "Reprovado!";
-    }
-
     
     ?>
 

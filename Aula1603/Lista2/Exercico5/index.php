@@ -13,23 +13,22 @@
   <body class="container">
   <h1>Exercício 5</h1>
   <form method="post" action="resultado.php">
-    <div class="row">
-      <div class="col">
-        <label from="nota1" class="label-control">Informe a primeira nota: </label>
-        <input type="number" name="nota1" id="nota1" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="nota2" class="label-control">Informe a segunda nota: </label>
-        <input type="number" name="nota2" id="nota2" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="nota3" class="label-control">Informe a terceira nota: </label>
-        <input type="number" name="nota3" id="nota3" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="nota4" class="label-control">Informe a quarta nota: </label>
-        <input type="number" name="nota4" id="nota4" class="form-control" />
-      </div>
+  <div class="">
+      <?php
+      for ($i = 0; $i < 10; $i++) {
+
+      ?>
+        <div class="col">
+          <label for="valor<?= $i ?>" class="label-control">
+            Informe o valor <?= $i+1 ?>
+          </label>
+          <input type="number" name="valor<?= $i ?>" id="valor<?= $i ?>" class="form-control" />
+        </div>
+      <?php
+      }
+      ?>
+
+    </div>
 
     </div>
     <div class="row mt-5">
