@@ -11,17 +11,23 @@
     <title>Exercício 4</title>
   </head>
   <body class="container">
-    <h1>Resultado do Exercício 1 </h1>
     <?php 
-    for ($x = 0; $x < 10; $x++) {
-      $array[$x] = $_POST["valor$x"];
+    echo "<h1>Resultado</h1>";
+    $valor = $_POST['valor'];
+    
+    if($valor > 0)
+    {
+        echo "Valor Positivo!";
     }
-    sort($array);
+    elseif($valor == 0)
+    {
+        echo "Igual a Zero!";
+    }
 
-    $soma = array_sum($array);
-    $media = $soma / 10;
-
-    echo "A média de todos os números informados é $media";
+    else
+    {
+        echo "Valor Negativo";
+    }
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->

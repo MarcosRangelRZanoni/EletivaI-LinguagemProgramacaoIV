@@ -8,21 +8,33 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Exercício 4</title>
+    <title>Exercício 1</title>
   </head>
   <body class="container">
-    <h1>Resultado do Exercício 1 </h1>
-    <?php 
-    for ($x = 0; $x < 10; $x++) {
-      $array[$x] = $_POST["valor$x"];
-    }
-    sort($array);
+  <h1>Exercício 1</h1>
+  
+  <form method="post" action="resultado.php">
+    <div class="row">
+      <div class="col">
+        <label from="valor1" class="label-control">Dia: </label>
+        <input type="number" name="valor1" id="valor1" class="form-control" />
+      </div>
+      <div class="col">
+        <label from="valor2" class="label-control">Mês: </label>
+        <input type="number" name="valor2" id="valor2" class="form-control" />
+      </div>
+      <div class="col">
+        <label from="valor3" class="label-control">ano: </label>
+        <input type="number" name="valor3" id="valor3" class="form-control" />
+      </div>
 
-    $soma = array_sum($array);
-    $media = $soma / 10;
-
-    echo "A média de todos os números informados é $media";
-    ?>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <button type="submit" class="btn btn-danger">Enviar</button>
+      </div>
+    </div>
+  </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -9,43 +9,24 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>Exercício 2</title>
+  <title>Resposta Exercício 1</title>
 </head>
 
 <body class="container">
-
-
-
+  <h1>Resposta Exercício 1</h1>
   <?php
-
-
-  for ($x = 1; $x <= 20; $x++) {
-    $array[$x] = $_POST["valor$x"];
+  function verificarData($dia, $mes, $ano)
+  {
+    if (checkdate($mes, $dia, $ano))
+      echo "Essa é uma data válida";
+    else
+      echo "Não é uma data válida";
   }
-  $valor = $_POST["valorP"];
-  $validar = false;
+  $diaInformadoUsuario = $_POST["valor1"];
+  $mesIU = $_POST['valor2'];
+  $anoIU = $_POST["valor3"];
 
-  for ($i = 1; $i <= 20; $i++) {
-    if ($array[$i] == $valor) {
-      $posicao[] = $i;
-      $validar = true;
-    }
-    
-  }
-
-
-  if (!$validar) {
-    echo "O valor informado não se encontra entre os valores";
-  } else {
-    foreach ($posicao as $chave => $v) {
-      echo "O valor se encrontra nessa(as) posições :$v";
-      echo "<br>";
-    }
-  }
-
-
-
-
+  verificarData($diaInformadoUsuario, $mesIU, $anoIU)
   ?>
 
   <!-- Optional JavaScript; choose one of the two! -->

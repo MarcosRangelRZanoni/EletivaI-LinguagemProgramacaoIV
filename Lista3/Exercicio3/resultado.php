@@ -9,43 +9,27 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-  <title>Exercício 2</title>
+  <title>Exercício 3</title>
 </head>
 
 <body class="container">
-
-
-
+  <h1>Resposta Exercício 3</h1>
   <?php
-
-
-  for ($x = 1; $x <= 20; $x++) {
+  for ($x = 1; $x <= 10; $x++) {
     $array[$x] = $_POST["valor$x"];
   }
-  $valor = $_POST["valorP"];
-  $validar = false;
 
-  for ($i = 1; $i <= 20; $i++) {
-    if ($array[$i] == $valor) {
-      $posicao[] = $i;
-      $validar = true;
-    }
-    
-  }
-
-
-  if (!$validar) {
-    echo "O valor informado não se encontra entre os valores";
-  } else {
-    foreach ($posicao as $chave => $v) {
-      echo "O valor se encrontra nessa(as) posições :$v";
-      echo "<br>";
+  for ($i = 1; $i < 10; $i++) {
+    if ($array[$i] == $array[$i + 1]) {
+      $array[$i] = "-";
     }
   }
+  sort($array);
 
-
-
-
+  foreach ($array as $chave => $valor) {
+    echo "$chave = $valor";
+    echo "<br>";
+  }
   ?>
 
   <!-- Optional JavaScript; choose one of the two! -->

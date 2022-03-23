@@ -8,20 +8,28 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Exercício 4</title>
+    <title>Exercício 5</title>
   </head>
   <body class="container">
-    <h1>Resultado do Exercício 1 </h1>
     <?php 
-    for ($x = 0; $x < 10; $x++) {
-      $array[$x] = $_POST["valor$x"];
+    echo "<h1>Resultado</h1>";
+    $nota1 = $_POST['nota1'];
+    $nota2 = $_POST['nota2'];
+    $nota3 = $_POST['nota3'];
+    $nota4 = $_POST['nota4'];
+
+    $media = $nota1 + $nota2 + $nota3 + $nota4 / 4;
+    
+    if($media >= 7.0)
+    {
+        echo "Aprovado!";
     }
-    sort($array);
+    else
+    {
+        echo "Reprovado!";
+    }
 
-    $soma = array_sum($array);
-    $media = $soma / 10;
-
-    echo "A média de todos os números informados é $media";
+    
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -11,18 +11,22 @@
     <title>Exercício 4</title>
   </head>
   <body class="container">
-    <h1>Resultado do Exercício 1 </h1>
-    <?php 
-    for ($x = 0; $x < 10; $x++) {
-      $array[$x] = $_POST["valor$x"];
-    }
-    sort($array);
+    <h1>Exercício 4</h1>
+    <form method="post" action="resultado.php">
+        <div class="row">
+            <div class="col">
+                <label from="valor" class="label-control">Informe o valor: </label>
+                <input type="number" name="valor" id="valor" class="form-control" />
+        </div>
+      
 
-    $soma = array_sum($array);
-    $media = $soma / 10;
-
-    echo "A média de todos os números informados é $media";
-    ?>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <button type="submit" class="btn btn-danger">Enviar</button>
+            </div>
+        </div>
+  </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

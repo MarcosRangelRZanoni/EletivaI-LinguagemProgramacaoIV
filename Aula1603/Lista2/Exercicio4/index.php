@@ -13,11 +13,22 @@
   <body class="container">
     <h1>Exercício 4</h1>
     <form method="post" action="resultado.php">
-        <div class="row">
-            <div class="col">
-                <label from="valor" class="label-control">Informe o valor: </label>
-                <input type="number" name="valor" id="valor" class="form-control" />
+    <div class="">
+      <?php
+      for ($i = 0; $i < 10; $i++) {
+
+      ?>
+        <div class="col">
+          <label for="valor<?= $i ?>" class="label-control">
+            Informe o valor <?= $i+1 ?>
+          </label>
+          <input type="number" name="valor<?= $i ?>" id="valor<?= $i ?>" class="form-control" />
         </div>
+      <?php
+      }
+      ?>
+
+    </div>
       
 
         </div>
