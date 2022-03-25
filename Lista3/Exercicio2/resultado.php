@@ -14,34 +14,28 @@
 
 <body class="container">
 
-
+  <h1>Resultado do Exercicio 2</h1>
 
   <?php
 
 
-  for ($x = 1; $x <= 20; $x++) {
+  for ($x = 0; $x <= 10; $x++) {
     $array[$x] = $_POST["valor$x"];
   }
-  $valor = $_POST["valorP"];
-  $validar = false;
-
-  for ($i = 1; $i <= 20; $i++) {
-    if ($array[$i] == $valor) {
-      $posicao[] = $i;
-      $validar = true;
+  function ordenarNome($array)
+  {
+    sort($array);
+    
+    foreach ($array as $chave => $valor) {
+      echo "$chave = $valor";
+      echo "<br>";
     }
     
   }
+  
+  $ordernar = ordenarNome($array);
 
 
-  if (!$validar) {
-    echo "O valor informado não se encontra entre os valores";
-  } else {
-    foreach ($posicao as $chave => $v) {
-      echo "O valor se encrontra nessa(as) posições :$v";
-      echo "<br>";
-    }
-  }
 
 
 

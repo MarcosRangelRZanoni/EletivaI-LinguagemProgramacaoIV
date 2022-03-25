@@ -18,30 +18,21 @@
   <form method="post" action="resultado.php">
     <div class="">
       <?php
-      for ($i = 1; $i <= 20; $i++) {
+      for ($i = 0; $i <= 10; $i++) {
 
       ?>
         <div class="col">
           <label for="valor<?= $i ?>" class="label-control">
-            Informe o valor <?= $i ?>
+            Informe o nome 
           </label>
-          <input type="number" name="valor<?= $i ?>" id="valor<?= $i ?>" class="form-control" />
+          <input type="text" name="valor<?= $i ?>" id="valor<?= $i ?>" class="form-control" />
         </div>
       <?php
       }
       ?>
 
     </div>
-    <div class="">
-      
-        <div class="col">
-          <label for="valorP" class="label-control">
-            Informe o valor a procurar
-          </label>
-          <input type="number" name="valorP" id="valorP" class="form-control" />
-        </div>
-      
-    </div>
+    
     <div class="row">
       <div class="col mt-2">
         <button class="btn btn-primary">Enviar</button>

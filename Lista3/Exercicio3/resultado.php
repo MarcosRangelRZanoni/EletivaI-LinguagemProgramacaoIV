@@ -15,20 +15,20 @@
 <body class="container">
   <h1>Resposta Exercício 3</h1>
   <?php
-  for ($x = 1; $x <= 10; $x++) {
-    $array[$x] = $_POST["valor$x"];
-  }
-
-  for ($i = 1; $i < 10; $i++) {
-    if ($array[$i] == $array[$i + 1]) {
-      $array[$i] = "-";
+  $valor1 = $_POST['valor0'];
+  $valor2 = $_POST['valor1'];
+  numeroMaior($valor1, $valor2);
+  function numeroMaior($valor1, $valor2)
+  {
+    if($valor1 < $valor2)
+    {
+      echo "O menor valor é $valor1 ";
     }
-  }
-  sort($array);
-
-  foreach ($array as $chave => $valor) {
-    echo "$chave = $valor";
-    echo "<br>";
+    else
+    {
+      echo "O menor valor é $valor2 ";
+    }
+    
   }
   ?>
 

@@ -18,48 +18,14 @@
   <form method="post" action="resultado.php">
     <div class="row">
       <div class="col">
-        <label from="valor1" class="label-control">Informe o 1º valor: </label>
+        <label from="valor0" class="label-control">Informe o 1º valor: </label>
+        <input type="number" name="valor0" id="valor0" class="form-control" />
+      </div>
+      <div class="col">
+        <label from="valor1" class="label-control">Informe o 2º valor: </label>
         <input type="number" name="valor1" id="valor1" class="form-control" />
       </div>
-      <div class="col">
-        <label from="valor" class="label-control">Informe o 2º valor: </label>
-        <input type="number" name="valor2" id="valor2" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="valor3" class="label-control">Informe o 3º valor: </label>
-        <input type="number" name="valor3" id="valor3" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="valor4" class="label-control">Informe o 4º valor: </label>
-        <input type="number" name="valor4" id="valor4" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="valor5" class="label-control">Informe o 5º valor: </label>
-        <input type="number" name="valor5" id="valor5" class="form-control" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <label from="valor6" class="label-control">Informe o 6º valor: </label>
-        <input type="number" name="valor6" id="valor6" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="valor7" class="label-control">Informe o 7º valor: </label>
-        <input type="number" name="valor7" id="valor7" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="valor8" class="label-control">Informe o 8º valor: </label>
-        <input type="number" name="valor8" id="valor8" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="valor9" class="label-control">Informe o 9º valor: </label>
-        <input type="number" name="valor9" id="valor9" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="valor10" class="label-control">Informe o 10º valor: </label>
-        <input type="number" name="valor10" id="valor10" class="form-control" />
-      </div>
-    </div>
+      
     <div class="row mt-5">
       <div class="col">
         <button type="submit" class="btn btn-danger">Enviar</button>
