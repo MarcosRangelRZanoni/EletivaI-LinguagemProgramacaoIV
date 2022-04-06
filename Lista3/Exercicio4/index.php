@@ -14,32 +14,40 @@
 
 <body class="container">
   <h1>Exercício 4</h1>
-  <form method="post" action="resultado.php">
-    <div class="row">
-      
-        <div class="col">
-          <label for="altura" class="label-control">
-            Informe a altura
-          </label>
-          <input type="text" step="any" name="altura" id="altura" class="form-control" />
+  <br>
+    
+    <b> DESCUBRA SUA CLASSIFICAÇÃO NA TABELA IMC </b>
+    <br>
+    <b> IMC = Peso ÷ (Altura × Altura) </b>
+    <form method="post" action="resultado.php" class="row">
+            <div class="col mt-3">
+                <label for="altura" class="label-control">
+                    <!-- "for="valor1<?= $i ?>" significa <?php echo $i; ?> -->
+                    INFORME SUA ALTURA:
+                </label>
+                <input type="text" step="any" name="altura" placeholder="1, 2, 3..." 
+                    id="altura" class="form-control" />
+            </div>
+            <div class="col mt-3">
+                <label for="peso" class="label-control">
+                    <!-- "for="valor1<?= $i ?>" significa <?php echo $i; ?> -->
+                    INFORME SEU PESO:
+                </label>
+                <input type="text" step="any" name="peso" placeholder="1, 2, 3..." 
+                    id="peso" class="form-control" />
+
+            </div>
+
+        <div class="row">
+            <div class="col mt-3">
+                <button type="submit" class="btn btn-primary">
+                    RESULTADO
+                </button>
+            </div>
         </div>
-        <div class="col">
-          <label for="peso" class="label-control">
-            Informe o peso
-          </label>
-          <input type="text" step="any" name="peso" id="peso" class="form-control" />
-        </div>
+        <br> <br>
+    </form>
 
-    </div>
-
-
-    </div>
-    <div class="row mt-5">
-      <div class="col">
-        <button type="submit" class="btn btn-danger">Enviar</button>
-      </div>
-    </div>
-  </form>
 
   <!-- Optional JavaScript; choose one of the two! -->
 

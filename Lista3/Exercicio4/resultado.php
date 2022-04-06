@@ -15,7 +15,10 @@
 <body class="container">
   <?php
   echo "<h1>Resultado</h1>";
-  function imc($altura, $peso)
+  $altura = $_POST["altura"];
+  $peso = $_POST["peso"];
+  
+  function IMC($altura, $peso)
   {
 
     $imc = $peso / ($altura * $altura);
@@ -24,7 +27,7 @@
     echo "<br>";
   }
 
-  function classificacao($altura, $peso)
+  function Classificacao($altura, $peso)
   {
     $imc = $peso / ($altura * $altura);
     if ($imc < 18.5)
@@ -46,51 +49,49 @@
       echo "OBESIDADE 33 (MÓRBIDA)";
   }
 
-  $altura = $_POST["altura"];
-  $peso = $_POST["peso"];
 
 
   ?>
 
   <table class="table">
     <thead>
-      <tr>
+      <tr class="table-dark">
         <th scope="col">IMC</th>
         <th scope="col">CLASSIFICAÇÃO</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">ABAIXO DE 18,5</th>
-        <td>ABAIXO DO PESO</td>
+      <tr >
+        <th class="table-dark" scope="row">Abaixo de 18,5</th>
+        <td>Abaixo Do Peso</td>
       </tr>
       <tr>
-        <th scope="row">ENTRE 18,6 E 24,9</th>
-        <td>PESO IDEAL PARABÉNS!!!</td>
+        <th class="table-dark" scope="row">Entre 18,6 e 24,9</th>
+        <td>Peso Ideal Parabéns</td>
       </tr>
       <tr>
-        <th scope="row">ENTRE 25 E 29,9</th>
-        <td colspan="2">LEVEMENTE ACIMA DO PESO</td>
+        <th class="table-dark" scope="row">Entre 25 e 29,9</th>
+        <td colspan="2">Levemente Acima Do Peso</td>
       </tr>
       <tr>
-        <th scope="row">ENTRE 30 E 34,9</th>
-        <td colspan="2">OBESIDADE GRAU I</td>
+        <th class="table-dark" scope="row">Entre 30 e 34,9</th>
+        <td colspan="2">Obesidade Grau I</td>
       </tr>
       <tr>
-        <th scope="row">ENTRE 35 E 39,9</th>
-        <td colspan="2">OBESIDADE GRAU II (SEVERA)</td>
+        <th class="table-dark" scope="row">Entre 35 e 39,9</th>
+        <td colspan="2">Obesidade Grau II (SEVERA)</td>
       </tr>
       <tr>
-        <th scope="row">ACIMA DE 40</th>
-        <td colspan="2">OBESIDADE GRAU III (MÓRBIDA)</td>
+        <th class="table-dark" scope="row">Acima De 40</th>
+        <td colspan="2">Obesidade Grau III (MÓRBIDA)</td>
       </tr>
-      <tr class="table-dark">
-        <th scope="row">SEU IMC <?= imc($altura, $peso) ?></th>
-        <td colspan="2"> <?= classificacao($altura, $peso) ?></td>
+      <tr class="table-danger">
+        <th scope="row">Seu IMC: <?= IMC($altura, $peso) ?></th>
+        <td colspan="2"> <?= Classificacao($altura, $peso) ?></td>
       </tr>
     </tbody>
   </table>
-  
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
