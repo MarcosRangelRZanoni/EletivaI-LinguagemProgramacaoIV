@@ -16,19 +16,19 @@
   <h1>Exercício 4</h1>
   <form method="post" action="resultado.php">
     <div class="row">
-      <?php
-      for ($i = 0; $i <= 5; $i++) {
-
-      ?>
+      
         <div class="col">
-          <label for="valor<?= $i ?>" class="label-control">
-            Informe o valor
+          <label for="altura" class="label-control">
+            Informe a altura
           </label>
-          <input type="number" name="valor<?= $i ?>" id="valor<?= $i ?>" class="form-control" />
+          <input type="text" step="any" name="altura" id="altura" class="form-control" />
         </div>
-      <?php
-      }
-      ?>
+        <div class="col">
+          <label for="peso" class="label-control">
+            Informe o peso
+          </label>
+          <input type="text" step="any" name="peso" id="peso" class="form-control" />
+        </div>
 
     </div>
 
