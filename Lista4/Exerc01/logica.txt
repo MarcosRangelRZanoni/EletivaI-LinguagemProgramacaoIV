@@ -1,0 +1,4 @@
+Informar o número de voltas(N)
+
+gerar um codigo que randomifica
+
