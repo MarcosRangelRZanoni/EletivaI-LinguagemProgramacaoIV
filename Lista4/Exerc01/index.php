@@ -24,8 +24,8 @@
                             <form action="resposta.php" method="POST">
                                 <div class="row ">
                                     <div class="col">
-                                        <label for="email" class="label-control">
-                                            INFORME a quantidade de voltas:
+                                        <label for="voltas" class="label-control">
+                                            Informe a quantidade de voltas:
                                         </label>
                                         <input type="number" name="volta" id="volta" class="form-control" />
                                     </div>

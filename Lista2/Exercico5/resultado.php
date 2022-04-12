@@ -16,13 +16,18 @@
       $array[$x] = $_POST["valor$x"];
     }
     sort($array);
+    echo "<h2>Crescemte</h2>";
     foreach ($array as $chave => $v) {
-      echo "Crescemte";
-      echo "<br>";
       echo $v;
+      echo "<br>";
     }
     
-    
+    rsort($array);
+    echo "<h2>Descrescente</h2>";
+    foreach ($array as $chave => $v) {
+      echo $v;
+      echo "<br>";
+    }
     ?>
 
     <!-- Optional JavaScript; choose one of the two! -->

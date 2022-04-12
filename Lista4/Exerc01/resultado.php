@@ -11,7 +11,31 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    
+  <form method="post" action="resultado.php" class=" row ">
+    <?php
+    $qtd_voltas = $_POST['valta'];   
+    for ($i = 1; $i <= $qtd_voltas; $i++) {
+    ?>
+      <div class=" col-3 mt-3 ">
+        <label for="valor<?=$i?>" class=" label-control ">
+          <!-- "for="valor1 <?=$i?> " significa <?php echo  $i; ?> -->
+          INFORME O TEMPO DA <?=$i?>º VOLTA:
+        </label>
+        <input type=" text " step="any" name="valor<?=$i?>" placeholder=" 1, 2, 3... " id="valor<?=$i?>" class=" form-control " />
+      </div>
+    <?php
+    }
+    ?>
+    <div class=" linha ">
+      <div class=" col mt-3 ">
+        <button type="submit" class="btn btn-danger">
+          RESULTADO
+        </button>
+      </div>
+    </div>
+
+  </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
