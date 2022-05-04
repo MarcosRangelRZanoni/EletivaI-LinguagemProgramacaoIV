@@ -1,0 +1,16 @@
+{
+    "name": "aluno/rangel",
+    "description": "Este e um exemplo de projeto usando PHP e MySql",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\Rangel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marcos Rangel",
+            "email": "marcos.zanoni@fatec.sp.gov.br"
+        }
+    ],
+    "require": {}
+}
