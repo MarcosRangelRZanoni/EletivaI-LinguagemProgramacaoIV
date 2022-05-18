@@ -1,0 +1,17 @@
+{
+    "name": "aluno/projeto-php",
+    "description": "Este eh um projeto usando PHP e MySQL",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\ProjetoPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "G-Sotti",
+            "email": "gabriel_sotti@hotmail.com"
+        }
+    ],
+    "require": {}
+}
