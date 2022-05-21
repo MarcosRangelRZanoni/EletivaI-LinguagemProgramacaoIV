@@ -22,7 +22,8 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
+CREATE Database if not EXISTS `projetophp`;
+USE `projetophp`;
 --
 -- Table structure for table `clientes`
 --
