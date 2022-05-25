@@ -14,18 +14,19 @@ $router = new \Aluno\ProjetoPhp\Router($method, $path);
 
 //ADICIONAR AS ROTAS VÁLIDAS ABAIXO
 
-$router->get("/ola-mundo", function(){
+$router->get("/ola-mundo", function () {
     return "Olá Mundo!";
 });
 
-$router->get('/exemplo','Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
+$router->get('/exemplo', 'Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
 $router->post("/exemplo-resultado", 'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
+$router->get('/clientes', 'Aluno\ProjetoPHP\Controller\ClientesController::abrirListaClientes');
 
 $result = $router->handler();
 
-if (!$result){
+if (!$result) {
     http_response_code(404);
     echo "Página não encontrada";
     die();

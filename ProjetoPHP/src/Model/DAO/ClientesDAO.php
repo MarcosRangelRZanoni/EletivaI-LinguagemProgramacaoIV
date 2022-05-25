@@ -7,7 +7,7 @@ use Aluno\ProjetoPhp\Model\Entity\Clientes;
 class ClientesDAO{
 
 
-    public function iserir(Clientes $c){
+    public function inserir(Clientes $c){
         try{
             $sql = "INSERT INTO `clientes`(`nome`, `email`, `idade`) VALUES (:nome, :email, :idade)";
 

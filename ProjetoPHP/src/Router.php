@@ -18,7 +18,7 @@ class Router
         $this->path = $path;
     }
 
-    public function get(string $route, $action)
+    public function get($route, $action)
     {
         $this->add('GET', $route, $action);
     }
@@ -28,7 +28,7 @@ class Router
         $this->add('POST', $route, $action);
     }
 
-    private function add(string $method, string $route, $action){
+    private function add(string $method, $route, $action){
         $this->routes[$method][$route] = $action;
     }
 
@@ -55,7 +55,7 @@ class Router
         }
     }
 
-    private function checkUrl(string $route, $path)
+    private function checkUrl($route, $path)
     {
 
         preg_match_all('/\{([^\}]*)\}/', $route, $variables);
