@@ -21,9 +21,10 @@ $router->get("/ola-mundo", function () {
 $router->get('/exemplo', 'Aluno\ProjetoPhp\Controller\ExercicioController::exibir');
 
 $router->post("/exemplo-resultado", 'Aluno\ProjetoPhp\Controller\ExercicioController::exibirResultado');
-//ADICIONAR AS ROTAS VÁLIDAS ACIMA
 $router->get('/clientes', 'Aluno\ProjetoPHP\Controller\ClientesController::abrirListaClientes');
+$router->get('/clientes/alterar/{id}', 'Aluno\ProjetoPhp\Controller\ExercicioController::abrirFormularioAlterar');
 
+//ADICIONAR AS ROTAS VÁLIDAS ACIMA
 $result = $router->handler();
 
 if (!$result) {

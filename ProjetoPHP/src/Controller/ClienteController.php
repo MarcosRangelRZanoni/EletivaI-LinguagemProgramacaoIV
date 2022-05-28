@@ -9,7 +9,14 @@ class ClientesController{
     public static function abrirFormularioInserir(){
         require_once "../src/View/inserir_cliente.php";
     }
+    public static function abrirFormularioAlterar($id){
+        $dao = new ClientesDAO();
+        $resultado = $dao->consultarPorID($id);
+        require_once "../src/View/alterar_cliente.php";
+    }
     public static function abrirListaClientes(){
+        $dao = new ClientesDAO();
+        $resultado = $dao->consultar();
         require_once "../src/View/listar_clientes.php";
     }
     public static function inserirCliente()
@@ -25,7 +32,7 @@ class ClientesController{
         }else{
             $resposta = false;
         }
-        require_once "../src/View/listar_clientes.php";
+        ClientesController::abrirListaClientes();
     }
      
 }

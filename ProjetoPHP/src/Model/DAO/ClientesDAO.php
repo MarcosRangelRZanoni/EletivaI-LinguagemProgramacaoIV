@@ -47,7 +47,7 @@ class ClientesDAO{
     public function consultarPorID($id){
         try{
             $sql = "SELECT * FROM clientes WHERE id = :id";
-            
+            return Conexao::conectar()->query($sql);
 
         } catch(\Exception $e){
             return false;
