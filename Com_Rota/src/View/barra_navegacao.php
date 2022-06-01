@@ -15,6 +15,9 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/ex3">Exercicio 3</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/ex4">Exercicio 4</a>
+        </li>
       </ul>
     </div>
   </div>
