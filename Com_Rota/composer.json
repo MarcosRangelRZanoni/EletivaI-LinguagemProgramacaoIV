@@ -1,0 +1,15 @@
+{
+    "name": "aluno/rangel",
+    "autoload": {
+        "psr-4": {
+            "Aluno\\Rangel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MarcosRangelRZanoni",
+            "email": "marcos.zanoni@fatec.sp.gov.br"
+        }
+    ],
+    "require": {}
+}
