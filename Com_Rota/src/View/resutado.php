@@ -12,23 +12,8 @@
   </head>
   <body class="container">
   <h1>Exercício 1</h1>
-  <form method="post" action="/ex1">
-    <div class="row">
-      <div class="col">
-        <label from="pago" class="label-control">Informe o valor pago: </label>
-        <input type="number" name="pago" id="pago" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="preco" class="label-control">Informe o preço do produto: </label>
-        <input type="number" name="preco" id="preco" class="form-control" />
-      </div>
-
-    </div>
-    <div class="row mt-5">
-      <div class="col">
-        <button type="submit" class="btn btn-danger">Enviar</button>
-      </div>
-    </div>
+  <form method="post" action="/ex1-resultado">
+    
   </form>
 
     <!-- Optional JavaScript; choose one of the two! -->

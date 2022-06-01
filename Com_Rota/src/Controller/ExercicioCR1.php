@@ -17,9 +17,9 @@ class ExercicioCR1
         if ($subtracao == 0) {
             echo "Não retorna troco";
         } else {
+            
             echo "Retornar: $subtracao";
         }
-
-        require_once("../src/View/exercicio1.php");
+        require_once("../src/View/resultado.php");
     }
 }
