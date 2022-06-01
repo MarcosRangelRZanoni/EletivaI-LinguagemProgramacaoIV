@@ -15,10 +15,10 @@ class ExercicioCR1
         $v_preco_produto = $_POST['preco'];
         $subtracao = ($preco_pago - $v_preco_produto);
         if ($subtracao == 0) {
-            echo "Não retorna troco";
+            $result = "Não retorna troco";
         } else {
             
-            echo "Retornar: $subtracao";
+            $result =  "Retornar: $subtracao";
         }
         require_once("../src/View/resultado.php");
     }

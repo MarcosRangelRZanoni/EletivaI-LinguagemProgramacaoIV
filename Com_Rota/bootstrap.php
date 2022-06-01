@@ -23,6 +23,15 @@ $router->post(
     '/ex1-resultado',
     'Aluno\Rangel\Controller\ExercicioCR1::mostrarResultado'
 );
+// Exercicio 2
+$router->get(
+    '/ex2',
+    'Aluno\Rangel\Controller\ExercicioCR2::mostrar'
+);
+$router->post(
+    '/ex2-resultado',
+    'Aluno\Rangel\Controller\ExercicioCR2::mostrarResultado'
+);
 
 //ADICIONAR AS ROTAS VÁLIDAS ACIMA
 $result = $router->handler();

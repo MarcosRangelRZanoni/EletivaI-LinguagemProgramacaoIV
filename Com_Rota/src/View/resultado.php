@@ -11,10 +11,15 @@
     <title>Exercício 1</title>
   </head>
   <body class="container">
-  <h1>Exercício 1</h1>
-  <form method="post" action="/ex1-resultado">
-    
-  </form>
+  <?php 
+    require_once('barra_navegacao.php');
+    ?>
+    <div class="col-2 mt-3">
+        <?php
+        if (isset($result))
+            echo "$result";
+        ?>
+    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
