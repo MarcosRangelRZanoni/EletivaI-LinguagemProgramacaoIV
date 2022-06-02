@@ -8,27 +8,38 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Exercício 4</title>
+    <title>Exercício 5</title>
   </head>
   <body class="container">
   <?php
   require_once('barra_navegacao.php');
   ?>
-    <h1>Exercício 4</h1>
-    <form method="post" action="/ex4-resultado">
-        <div class="row">
-            <div class="col">
-                <label from="valor" class="label-control">Informe o valor: </label>
-                <input type="number" name="valor" id="valor" class="form-control" />
-        </div>
-      
+  <h1>Exercício 5</h1>
+  <form method="post" action="/ex5-resultado">
+    <div class="row">
+      <div class="col">
+        <label from="nota1" class="label-control">Informe a primeira nota: </label>
+        <input type="number" name="nota1" id="nota1" class="form-control" />
+      </div>
+      <div class="col">
+        <label from="nota2" class="label-control">Informe a segunda nota: </label>
+        <input type="number" name="nota2" id="nota2" class="form-control" />
+      </div>
+      <div class="col">
+        <label from="nota3" class="label-control">Informe a terceira nota: </label>
+        <input type="number" name="nota3" id="nota3" class="form-control" />
+      </div>
+      <div class="col">
+        <label from="nota4" class="label-control">Informe a quarta nota: </label>
+        <input type="number" name="nota4" id="nota4" class="form-control" />
+      </div>
 
-        </div>
-        <div class="row mt-5">
-            <div class="col">
-                <button type="submit" class="btn btn-danger">Enviar</button>
-            </div>
-        </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col">
+        <button type="submit" class="btn btn-danger">Enviar</button>
+      </div>
+    </div>
   </form>
 
     <!-- Optional JavaScript; choose one of the two! -->

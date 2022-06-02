@@ -2,7 +2,7 @@
 
 namespace Aluno\Rangel\Controller;
 
-class ExercicioCR3
+class ExercicioCR4
 {
     public static function mostrar()
     {
