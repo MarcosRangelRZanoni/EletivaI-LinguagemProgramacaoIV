@@ -10,17 +10,18 @@
 
     <title>Exercício 1</title>
   </head>
-  <body class="container">
+  <body class="">
   <?php 
     require_once('barra_navegacao.php');
     ?>
+    <div class="container">
     <div class="col-2 mt-3">
         <?php
         if (isset($result))
             echo "$result";
         ?>
     </div>
-
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

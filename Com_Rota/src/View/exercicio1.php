@@ -12,30 +12,43 @@
   <title>Exercício 1</title>
 </head>
 
-<body class="container">
+<body class="bg-secondary">
   <?php
   require_once('barra_navegacao.php');
   ?>
-  <h1>Exercício 1</h1>
-  <form method="post" action="/ex1-resultado">
+  <div class="container">
+
     <div class="row">
-      <div class="col">
-        <label from="pago" class="label-control">Informe o valor pago: </label>
-        <input type="number" name="pago" id="pago" class="form-control" />
-      </div>
-      <div class="col">
-        <label from="preco" class="label-control">Informe o preço do produto: </label>
-        <input type="number" name="preco" id="preco" class="form-control" />
-      </div>
+      <div class="col-2"></div>
+      <div class="col-8 mt-5 p-5 bg-light border border-dark border-2 rounded shadow-lg">
+        <h1>Exercício 1</h1>
+        <div class="row">
+          <div class="col">
+            <form method="post" action="/ex1-resultado">
+              <label from="pago" class="label-control">Informe o valor pago: </label>
+              <input type="number" name="pago" id="pago" class="form-control" />
+          </div>
+          <div class="col">
+            <label from="preco" class="label-control">Informe o preço do produto: </label>
+            <input type="number" name="preco" id="preco" class="form-control" />
+          </div>
 
-    </div>
-    <div class="row mt-5">
-      <div class="col">
-        <button type="submit" class="btn btn-danger">Enviar</button>
-      </div>
-    </div>
-  </form>
+        </div>
+        <div class="row mt-5">
+          <div class="col">
+            <button type="submit" class="btn btn-danger">Enviar</button>
+            </form>
+          </div>
+        </div>
+      
+      
 
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+
+  </div>
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->

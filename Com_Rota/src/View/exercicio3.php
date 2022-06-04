@@ -10,10 +10,11 @@
 
     <title>Exercício 3</title>
   </head>
-  <body class="container">
+  <body class="">
   <?php
   require_once('barra_navegacao.php');
   ?>
+  <div class="container">
   <h1>Exercício 3</h1>
   <form method="post" action="/ex3-resultado">
     <div class="row">
@@ -30,7 +31,7 @@
       </div>
     </div>
   </form>
-
+  </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
